@@ -16,14 +16,20 @@ main h1 {
 	padding: 25px;
 	border-bottom: 10px solid black;
 	margin: 0px;
+	text-transform: uppercase;
 }
 
 h1{
 	font-size: 60px;
 }
 
+aside h1{
+	font-size: 40px;
+}
+
 h2{
 	font-size: 30px;
+	clear: both;
 }
 
 p {
@@ -43,24 +49,54 @@ aside {
 	background-color: #3C1D3D;
 	color: #F2FFFC;
 	text-align: center;
-}
-
-footer {
-	background-color: #000;
-	color: #F2FFFC;
-}
-
-nav a {
-	color: #F2FFFC;
-}
-
-main a {
-	color: #851944;
+	clear: right;
+	box-sizing: border-box;
+	width: 15%;
+	border-bottom: 10px solid black;
+	border-left: 10px solid black;
+	border-right: 10px solid black;
+	position: relative;
+	top: 320px;
 }
 
 aside a {
 	color: inherit;
 	font-family: "Open Sans Condensed", sans-serif;
+}
+
+aside, img{
+	float: right;
+}
+
+.minha-foto{
+	border: 10px solid black;
+	position: absolute;
+	top: 0px;
+	right: 0px
+}
+
+main{
+	float: left;
+	width: 85%
+}
+
+footer {
+	background-color: #000;
+	color: #F2FFFC;
+	clear: both;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 0;
+}
+
+nav a {
+	color: #F2FFFC;
+	text-transform: lowercase;
+}
+
+main a {
+	color: #851944;
 }
 
 blockquote, aside, footer {
@@ -91,6 +127,25 @@ article{
 	display: inline-block;
 }
 
+.icones-sociais a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	font-size: 0;
+}
+
+.git{
+	background-image: url("github.png");
+}
+
+.twitter{
+	background-image: url("twitter.png");
+}
+
+.linkedin{
+	background-image: url("linkedin.png");
+}
+
 .leia-mais{
 	padding: 8px;
 	margin: 16px;
@@ -99,3 +154,18 @@ article{
 	text-align: center;
 	background-color: #E6E7E8;
 }
+
+.fiat{
+	float: right;
+}
+
+.petrobras{
+	float: left;
+}
+
+.container{
+	padding: 40px 0;
+	padding-bottom: 100px
+}
+
+
